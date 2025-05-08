@@ -28429,5 +28429,39 @@ header::before {
 @media (max-width: 900px) {
   #bookAtable div .formDiv div input {
     width: 100% !important; } }
+#gallery {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important; }
+  #gallery div div h2, #gallery div div .h2 {
+    font-family: "secondary-font", sans-serif; }
+  #gallery div div .galleryParagraph {
+    font-family: "secondary-font", sans-serif;
+    position: relative; }
+  #gallery div div .galleryParagraph::before {
+    content: "";
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #cda45e; }
+  #gallery div div div {
+    width: 100%; }
+    #gallery div div div div {
+      width: calc(100% / 4);
+      overflow: hidden; }
+      #gallery div div div div img {
+        width: 100%;
+        transition: 0.5s; }
+      #gallery div div div div img:hover {
+        scale: 110%;
+        cursor: pointer; }
+
+@media (max-width: 900px) {
+  #gallery div div div {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */
