@@ -1,0 +1,63 @@
+#bookAtable {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important;
+  div {
+    .textDiv {
+      p {
+        font-family: "secondary-font", sans-serif;
+        position: relative;
+      }
+      h1 {
+        font-family: "secondary-font", sans-serif;
+      }
+      p::before {
+        content: "";
+        position: absolute;
+        left: 7rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5rem;
+        height: 2px;
+        background-color: $alpha;
+      }
+    }
+    .formDiv{
+        div{
+            input{
+                width: calc(100% / 3);
+                border: 1px solid gray;
+            }
+            input:focus{
+                outline: none;
+            }
+        }
+        textarea{
+            border: 1px solid gray;
+        }
+        button{
+            width: fit-content;
+            border: 1px solid $alpha;
+            transition: 0.5s;
+        }
+        button:hover{
+            background-color: $alpha !important;
+            color: black !important;
+        }
+    }
+  }
+}
+@media (max-width:900px){
+    #bookAtable{
+        div{
+            .formDiv{
+                div{
+                    input{
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}

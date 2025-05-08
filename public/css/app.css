@@ -28392,5 +28392,42 @@ header::before {
 @media (max-width: 900px) {
   #whyUs .cardWhyUS {
     width: 100% !important; } }
+#bookAtable {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important; }
+  #bookAtable div .textDiv p {
+    font-family: "secondary-font", sans-serif;
+    position: relative; }
+  #bookAtable div .textDiv h1, #bookAtable div .textDiv .h1 {
+    font-family: "secondary-font", sans-serif; }
+  #bookAtable div .textDiv p::before {
+    content: "";
+    position: absolute;
+    left: 7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #cda45e; }
+  #bookAtable div .formDiv div input {
+    width: calc(100% / 3);
+    border: 1px solid gray; }
+  #bookAtable div .formDiv div input:focus {
+    outline: none; }
+  #bookAtable div .formDiv textarea {
+    border: 1px solid gray; }
+  #bookAtable div .formDiv button {
+    width: fit-content;
+    border: 1px solid #cda45e;
+    transition: 0.5s; }
+  #bookAtable div .formDiv button:hover {
+    background-color: #cda45e !important;
+    color: black !important; }
+
+@media (max-width: 900px) {
+  #bookAtable div .formDiv div input {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */
