@@ -28207,7 +28207,7 @@ header {
     top: 0vh;
     left: 0;
     color: #fff;
-    z-index: 8 !important; }
+    z-index: 100 !important; }
     header nav a h1, header nav a .h1 {
       font-family: 'secondary-font';
       font-weight: bold;
@@ -28250,7 +28250,7 @@ header {
     transform: translateX(-50%);
     background-color: hwb(40 6% 91%) !important;
     transition: 0.5s;
-    z-index: 13 !important; }
+    z-index: 200 !important; }
     header .modalDiv div input {
       width: 30vw; }
     header .modalDiv div div button {
@@ -28276,6 +28276,8 @@ header {
     border-radius: 50%; }
     header .heroSection .playBtn i {
       font-size: 3rem; }
+  header .dropDownDiv {
+    position: relative !important; }
 
 header::before {
   content: " ";
@@ -28302,7 +28304,6 @@ header::before {
     top: 15px;
     right: 15px; }
   header nav {
-    top: 10vh !important;
     z-index: 10 !important; }
     header nav .navLinks {
       position: fixed;
@@ -28326,7 +28327,8 @@ header::before {
 #about {
   position: relative !important;
   height: max-content;
-  width: 100%; }
+  width: 100%;
+  z-index: 0 !important; }
   #about div {
     position: relative; }
     #about div div h2, #about div div .h2 {
@@ -28352,6 +28354,43 @@ header::before {
 
 @media (max-width: 900px) {
   #about div div {
+    width: 100% !important; } }
+#whyUs {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important; }
+  #whyUs div div h2, #whyUs div div .h2 {
+    font-family: 'secondary-font' , sans-serif; }
+  #whyUs div div .whyUsParagraph {
+    font-family: 'secondary-font' , sans-serif;
+    position: relative; }
+  #whyUs div div .whyUsParagraph::before {
+    content: "";
+    position: absolute;
+    left: 4.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #cda45e; }
+  #whyUs div .cardWhyUS {
+    width: calc(100% / 3);
+    cursor: pointer;
+    transition: 0.5s; }
+    #whyUs div .cardWhyUS h1, #whyUs div .cardWhyUS .h1, #whyUs div .cardWhyUS p {
+      transition: 0.5s; }
+  #whyUs div .cardWhyUS:hover {
+    background-color: #cda45e !important; }
+    #whyUs div .cardWhyUS:hover h1, #whyUs div .cardWhyUS:hover .h1 {
+      color: black !important;
+      transform: translateY(-12px); }
+    #whyUs div .cardWhyUS:hover p {
+      color: black !important;
+      transform: translateY(-12px); }
+
+@media (max-width: 900px) {
+  #whyUs .cardWhyUS {
     width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */

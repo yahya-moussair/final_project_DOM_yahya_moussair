@@ -1,0 +1,53 @@
+#whyUs{
+    position: relative !important;
+    height: max-content;
+    width: 100%;
+    z-index: 0 !important;
+    div{
+        div{
+            h2{
+                font-family: 'secondary-font' , sans-serif;
+            }
+            .whyUsParagraph{
+                font-family: 'secondary-font' , sans-serif;
+                position: relative;
+            }
+            .whyUsParagraph::before{
+                content: "";
+                position: absolute;
+                left: 4.5rem;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 5rem;
+                height: 2px;
+                background-color: $alpha;
+            }
+        }
+        .cardWhyUS{
+            width: calc(100% / 3);
+            cursor: pointer;
+            transition: 0.5s;
+            h1 , p{
+                transition: 0.5s;
+            }
+        }
+        .cardWhyUS:hover{
+            background-color: $alpha !important;
+            h1{
+                color: black !important;
+                transform: translateY(-12px);
+            }
+            p{
+                color: black !important;
+                transform: translateY(-12px);
+            }
+        }
+    }
+}
+@media (max-width:900px){
+    #whyUs{
+        .cardWhyUS{
+            width: 100% !important;
+        }
+    }
+}

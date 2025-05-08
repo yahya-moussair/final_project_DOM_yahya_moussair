@@ -18,7 +18,7 @@ header{
         top: 0vh;
         left: 0;
         color: #fff;
-        z-index: 8 !important;
+        z-index: 100 !important;
         a{
             h1{
                 font-family: 'secondary-font';
@@ -74,7 +74,7 @@ header{
     transform: translateX(-50%);
     background-color: hwb(40 6% 91%) !important;
     transition: 0.5s;
-    z-index: 13 !important;
+    z-index: 200 !important;
     div{
         input{
             width: 30vw;
@@ -120,6 +120,9 @@ header{
         }
     }
 }
+.dropDownDiv{
+    position: relative !important;
+}
 }
 
 header::before{
@@ -151,7 +154,6 @@ header::before{
             right: 15px;
         }
         nav{
-            top: 10vh !important;
             z-index: 10 !important;
             .navLinks{
                 position: fixed;
