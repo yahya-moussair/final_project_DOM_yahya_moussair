@@ -28194,7 +28194,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 * {
   z-index: 5 !important;
-  font-family: 'primary-font'; }
+  font-family: 'primary-font';
+  -webkit-user-select: none; }
 
 header {
   position: relative;
@@ -28203,7 +28204,7 @@ header {
   header .engSection div span, header .engSection div p {
     font-size: 0.8rem; }
   header nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     position: fixed;
     top: 7vh;
     left: 0;
@@ -28214,11 +28215,13 @@ header {
       transition: 0.5s; }
     header nav a h1:hover, header nav a .h1:hover {
       scale: 110%; }
-    header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks div > p > i {
-      transition: 0.5s; }
-    header nav .navLinks a:hover, header nav .navLinks div > p:hover {
-      color: rgba(205, 164, 94, 0.8) !important;
-      cursor: pointer; }
+    header nav .navLinks {
+      z-index: 12 !important; }
+      header nav .navLinks a {
+        transition: 0.5s; }
+      header nav .navLinks a:hover {
+        color: rgba(205, 164, 94, 0.8) !important;
+        cursor: pointer !important; }
     header nav button {
       background-color: transparent;
       border-radius: 50px;
@@ -28247,7 +28250,8 @@ header {
     top: -200%;
     transform: translateX(-50%);
     background-color: hwb(40 6% 91%) !important;
-    transition: 0.5s; }
+    transition: 0.5s;
+    z-index: 13 !important; }
     header .modalDiv div input {
       width: 30vw; }
     header .modalDiv div div button {
@@ -28256,6 +28260,23 @@ header {
       background-color: white !important;
       color: black !important;
       border: 1px black solid; }
+  header .heroSection div h1, header .heroSection div .h1 {
+    font-family: 'secondary-font' , sans-serif;
+    font-size: 3.5rem; }
+    header .heroSection div h1 span, header .heroSection div .h1 span {
+      font-family: 'secondary-font' , sans-serif; }
+  header .heroSection div div button {
+    transition: 0.5s;
+    width: 10rem; }
+  header .heroSection div div button:hover {
+    background-color: #cda45e !important;
+    color: black !important; }
+  header .heroSection .playBtn {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%; }
+    header .heroSection .playBtn i {
+      font-size: 3rem; }
 
 header::before {
   content: " ";
@@ -28282,7 +28303,8 @@ header::before {
     top: 15px;
     right: 15px; }
   header nav {
-    top: 10vh !important; }
+    top: 10vh !important;
+    z-index: 10 !important; }
     header nav .navLinks {
       position: fixed;
       left: 50%;
@@ -28293,8 +28315,7 @@ header::before {
       background-color: white;
       transition: 0.5s;
       width: 90%;
-      height: 90vh;
-      z-index: 40000 !important; }
+      height: 90vh; }
       header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks span {
         color: black !important; }
     header nav a h1, header nav a .h1 {
