@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="d-flex flex-column gap-2 pt-2">
+    <header class="d-flex flex-column gap-1 pt-2">
         <div class="engSection d-flex justify-content-between w-100 text-white px-lg-10 px-2">
             <div class="d-flex flex-lg-row flex-column align-items-lg-center gap-lg-2 gap-0">
                 <span class="d-flex align-items-center gap-1"><i class="bi bi-envelope text-alpha" ></i>contact@example.com</span>
@@ -32,16 +32,34 @@
                 <a href="" class="text-white text-decoration-none">Chefs</a>
                 <a href="" class="text-white text-decoration-none">Gallery</a>
                 <span id="close"><i class="bi bi-x-lg fs-3 text-black fw-bold"></i></span>
-                <div>
-                    <p class="text-white text-decoration-none">Dropdown <i class="bi bi-chevron-down fs-2 "></i></p>
+                <div class="dropDownDiv">
+                    <p class="dropDown text-white text-decoration-none">Dropdown <i class="bi bi-chevron-down fs-2 "></i></p>
+                    <div class="dropDownSelect hidden ps-1 py-2 d-flex flex-column gap-2 bg-alpha text-white">
+                        <p>Dropdownn 1</p>
+                        <p>Dropdownn 2</p>
+                        <p>Dropdownn 3</p>
+                        <p>Dropdownn 4</p>
+                    </div>
                 </div>
                 <a href="" class="text-decoration-none text-white">Contact</a>
             </div>
             <div class="d-flex align-items-center gap-1">
-                <button>BOOK A TABLE</button>
+                <button class="openModal">BOOK A TABLE</button>
                 <span id="open"><i class="bi bi-list fs-3 text-white fw-bold"></i></span>
             </div>
         </nav>
+        <div class="modalDiv text-white d-flex flex-column gap-2 px-2 py-3 rounded-2">
+            <h2 class="text-start">Sign Up</h2>
+            <div class="d-flex flex-column gap-2 align-items-center ">
+                <input type="text" placeholder="Enter your name" class="fs-2 rounded-1 ps-1 py-1  border border-1">
+                <input type="email" placeholder="Enter your email" class="fs-2 rounded-1 ps-1 py-1  border border-1">
+                <input type="password" placeholder="Enter your password" class="fs-2 rounded-1 ps-1 py-1  border border-1">
+                <input type="password" placeholder="Confirmyour password" class="fs-2 rounded-1 ps-1 py-1  border border-1">
+                <div class="d-flex gap-2 ">
+                    <button class="closeModal bg-alpha py-1 px-1 border border-0 rounded-3">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
     </main>

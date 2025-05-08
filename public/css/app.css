@@ -28200,11 +28200,14 @@ header {
   position: relative;
   height: 100%;
   width: 100%; }
+  header .engSection div span, header .engSection div p {
+    font-size: 0.8rem; }
   header nav {
     background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    margin-top: 2vh;
-    margin-bottom: 2vh; }
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    color: #fff; }
     header nav a h1, header nav a .h1 {
       font-family: 'secondary-font';
       font-weight: bold;
@@ -28226,6 +28229,33 @@ header {
     header nav button:hover {
       background-color: #cda45e;
       color: black; }
+  header .hidden {
+    display: none !important; }
+  header .dropDownSelect {
+    position: absolute;
+    top: 6vh;
+    left: 0;
+    width: 13rem;
+    background-color: hwb(42 9% 87%) !important;
+    border-radius: 0.25rem; }
+    header .dropDownSelect p:hover {
+      color: rgba(205, 164, 94, 0.8) !important; }
+  header .modalDiv {
+    width: fit-content;
+    position: fixed;
+    left: 50%;
+    top: -200%;
+    transform: translateX(-50%);
+    background-color: hwb(40 6% 91%) !important;
+    transition: 0.5s; }
+    header .modalDiv div input {
+      width: 30vw; }
+    header .modalDiv div div button {
+      transition: 0.5s; }
+    header .modalDiv div div button:hover {
+      background-color: white !important;
+      color: black !important;
+      border: 1px black solid; }
 
 header::before {
   content: " ";
@@ -28251,24 +28281,29 @@ header::before {
     position: absolute;
     top: 15px;
     right: 15px; }
-  header nav .navLinks {
-    position: fixed;
-    left: 50%;
-    top: -200%;
-    transform: translate(-50%, -50%);
-    border-radius: 0.25rem;
-    background-color: white;
-    transition: 0.5s;
-    width: 90%;
-    height: 90vh;
-    z-index: 40000 !important; }
-    header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks span {
-      color: black !important; }
-  header nav a h1, header nav a .h1 {
-    font-size: 1.5rem; }
-  header nav button {
-    padding: 0.5vh 2vw;
-    font-size: 1rem; } }
+  header nav {
+    top: 10vh !important; }
+    header nav .navLinks {
+      position: fixed;
+      left: 50%;
+      top: -200%;
+      margin-top: 0 !important;
+      transform: translate(-50%, -50%);
+      border-radius: 0.25rem;
+      background-color: white;
+      transition: 0.5s;
+      width: 90%;
+      height: 90vh;
+      z-index: 40000 !important; }
+      header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks span {
+        color: black !important; }
+    header nav a h1, header nav a .h1 {
+      font-size: 1.5rem; }
+    header nav button {
+      padding: 0.5vh 2vw;
+      font-size: 1rem; }
+  header .modalDiv div input {
+    width: 80vw; } }
 * {
   position: relative;
   z-index: 5 !important; }
