@@ -28199,16 +28199,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 header {
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100%; }
-  header .engSection div span, header .engSection div p {
-    font-size: 0.8rem; }
   header nav {
     background-color: black;
     position: fixed;
-    top: 7vh;
+    top: 0vh;
     left: 0;
-    color: #fff; }
+    color: #fff;
+    z-index: 8 !important; }
     header nav a h1, header nav a .h1 {
       font-family: 'secondary-font';
       font-weight: bold;
@@ -28283,7 +28282,7 @@ header::before {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: url("../../../../../public/images/hero-bg.jpg");
   box-sizing: border-box;
@@ -28295,7 +28294,7 @@ header::before {
 #menu, #close, #open {
   display: none; }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   header #open, header #close {
     display: block; }
   header #close {
@@ -28309,7 +28308,6 @@ header::before {
       position: fixed;
       left: 50%;
       top: -200%;
-      margin-top: 0 !important;
       transform: translate(-50%, -50%);
       border-radius: 0.25rem;
       background-color: white;
@@ -28325,8 +28323,35 @@ header::before {
       font-size: 1rem; }
   header .modalDiv div input {
     width: 80vw; } }
-* {
-  position: relative;
-  z-index: 5 !important; }
+#about {
+  position: relative !important;
+  height: max-content;
+  width: 100%; }
+  #about div {
+    position: relative; }
+    #about div div h2, #about div div .h2 {
+      font-family: 'secondary-font' , sans-serif; }
+  #about img {
+    transition: 0.5s; }
+  #about img:hover {
+    scale: 105%; }
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../../../public/images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0 !important;
+  filter: sepia(10%) brightness(20%); }
+
+@media (max-width: 900px) {
+  #about div div {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */

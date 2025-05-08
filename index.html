@@ -1,85 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-    <link rel="stylesheet" href="./public/css/app.css">
-</head>
+    <link rel="stylesheet" href="./public/css/app.css" />
+  </head>
 
-<body>
-    <header class="d-flex flex-column gap-1 pt-2">
-        <div class="engSection d-flex justify-content-between w-100 text-white px-lg-10 px-2">
-            <div class="d-flex flex-lg-row flex-column align-items-lg-center gap-lg-2 gap-0">
-                <span class="d-flex align-items-center gap-1"><i class="bi bi-envelope text-alpha" ></i>contact@example.com</span>
-                <span class="d-flex align-items-center gap-1"><i class="bi bi-phone  text-alpha"></i>+1 5589 55488 55</span>
+  <body>
+    <header class="d-flex flex-column gap-1">
+      <nav
+        class="d-flex align-items-center justify-content-between w-100 px-lg-10 px-2 py-2"
+      >
+        <a href="./index.html" class="text-decoration-none text-white">
+          <h1>Restaurantly</h1>
+        </a>
+        <div
+          class="navLinks d-flex flex-lg-row flex-column gap-lg-2 gap-4 align-items-lg-center align-items-start text-lg-start ps-lg-0 ps-3 justify-content-lg-start justify-content-center"
+        >
+          <a href="" class="text-white text-decoration-none">Home</a>
+          <a href="" class="text-white text-decoration-none">About</a>
+          <a href="" class="text-white text-decoration-none">Menu</a>
+          <a href="" class="text-white text-decoration-none">Specials</a>
+          <a href="" class="text-white text-decoration-none">Events</a>
+          <a href="" class="text-white text-decoration-none">Chefs</a>
+          <a href="" class="text-white text-decoration-none">Gallery</a>
+          <span id="close"
+            ><i class="bi bi-x-lg fs-3 text-black fw-bold"></i
+          ></span>
+          <div class="dropDownDiv">
+            <p class="dropDown text-white text-decoration-none">
+              Dropdown <i class="bi bi-chevron-down fs-2"></i>
+            </p>
+            <div
+              class="dropDownSelect hidden ps-1 py-2 d-flex flex-column gap-2 bg-alpha text-white"
+            >
+              <p>Dropdownn 1</p>
+              <p>Dropdownn 2</p>
+              <p>Dropdownn 3</p>
+              <p>Dropdownn 4</p>
             </div>
-            <div>
-                <p>ENG / DE</p>
-            </div>
+          </div>
+          <a href="" class="text-decoration-none text-white">Contact</a>
         </div>
-        <nav class="d-flex align-items-center justify-content-between w-100 px-lg-10 px-2 py-2">
-            <a href="./index.html" class="text-decoration-none text-white">
-                <h1>Restaurantly</h1>
-            </a>
-            <div class="navLinks d-flex flex-lg-row flex-column gap-lg-2 gap-4 align-items-lg-center align-items-start text-lg-start ps-lg-0 ps-3 justify-content-lg-start justify-content-center">
-                <a href="" class="text-white text-decoration-none">Home</a>
-                <a href="" class="text-white text-decoration-none">About</a>
-                <a href="" class="text-white text-decoration-none">Menu</a>
-                <a href="" class="text-white text-decoration-none">Specials</a>
-                <a href="" class="text-white text-decoration-none">Events</a>
-                <a href="" class="text-white text-decoration-none">Chefs</a>
-                <a href="" class="text-white text-decoration-none">Gallery</a>
-                <span id="close"><i class="bi bi-x-lg fs-3 text-black fw-bold"></i></span>
-                <div class="dropDownDiv">
-                    <p class="dropDown text-white text-decoration-none">Dropdown <i class="bi bi-chevron-down fs-2 "></i></p>
-                    <div class="dropDownSelect hidden ps-1 py-2 d-flex flex-column gap-2 bg-alpha text-white">
-                        <p>Dropdownn 1</p>
-                        <p>Dropdownn 2</p>
-                        <p>Dropdownn 3</p>
-                        <p>Dropdownn 4</p>
-                    </div>
-                </div>
-                <a href="" class="text-decoration-none text-white">Contact</a>
-            </div>
-            <div class="d-flex align-items-center gap-1">
-                <button class="openModal">BOOK A TABLE</button>
-                <span id="open"><i class="bi bi-list fs-3 text-white fw-bold"></i></span>
-            </div>
-        </nav>
-        <div class="modalDiv text-white d-flex flex-column gap-2 px-2 py-3 rounded-2">
-            <h2 class="text-start">Sign Up</h2>
-            <div class="d-flex flex-column gap-2 align-items-center ">
-                <input type="text" placeholder="Enter your name" class="fs-2 rounded-1 ps-1 py-1  border border-1">
-                <input type="email" placeholder="Enter your email" class="fs-2 rounded-1 ps-1 py-1  border border-1">
-                <input type="password" placeholder="Enter your password" class="fs-2 rounded-1 ps-1 py-1  border border-1">
-                <input type="password" placeholder="Confirmyour password" class="fs-2 rounded-1 ps-1 py-1  border border-1">
-                <div class="d-flex gap-2 ">
-                    <button class="closeModal bg-alpha py-1 px-1 border border-0 rounded-3">Sign Up</button>
-                </div>
-            </div>
+        <div class="d-flex align-items-center gap-1">
+          <button class="openModal">BOOK A TABLE</button>
+          <span id="open"
+            ><i class="bi bi-list fs-3 text-white fw-bold"></i
+          ></span>
         </div>
-        <div class="heroSection mt-lg-30 mt-15 text-white d-flex flex-lg-row flex-column gap-lg-0 gap-2 justify-content-lg-around align-items-center text-lg-start text-center">
-            <div class="d-flex flex-column gap-2">
-                <h1 class="">Welcome to <span class="text-alpha">Restaurantly</span></h1>
-                <h4 class="text-white">Delivering great food for more than 18 years!</h4>
-                <div class="d-flex gap-2 flex-lg-row flex-column align-items-center">
-                    <button class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent ">OUR MENU</button>
-                    <button class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent ">BOOK A TABLE</button>
-                </div>
-            </div>
-            <button class="playBtn bg-alpha border-0"><i class="bi bi-play-circle text-white"></i></button>
+      </nav>
+      <div
+        class="modalDiv text-white d-flex flex-column gap-2 px-2 py-3 rounded-2"
+      >
+        <h2 class="text-start">Sign Up</h2>
+        <div class="d-flex flex-column gap-2 align-items-center">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="fs-2 rounded-1 ps-1 py-1 border border-1"
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="fs-2 rounded-1 ps-1 py-1 border border-1"
+          />
+          <input
+            type="password"
+            placeholder="Enter your password"
+            class="fs-2 rounded-1 ps-1 py-1 border border-1"
+          />
+          <input
+            type="password"
+            placeholder="Confirmyour password"
+            class="fs-2 rounded-1 ps-1 py-1 border border-1"
+          />
+          <div class="d-flex gap-2">
+            <button
+              class="closeModal bg-alpha py-1 px-1 border border-0 rounded-3"
+            >
+              Sign Up
+            </button>
+          </div>
         </div>
+      </div>
+      <div
+        class="heroSection mt-lg-30 mt-15 text-white d-flex flex-lg-row flex-column gap-lg-0 gap-2 justify-content-lg-around align-items-center text-lg-start text-center"
+      >
+        <div class="d-flex flex-column gap-2">
+          <h1 class="">
+            Welcome to <span class="text-alpha">Restaurantly</span>
+          </h1>
+          <h4 class="text-white">
+            Delivering great food for more than 18 years!
+          </h4>
+          <div class="d-flex gap-2 flex-lg-row flex-column align-items-center">
+            <button
+              class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent"
+            >
+              OUR MENU
+            </button>
+            <button
+              class="py-1 border border-2 border-alpha rounded-5 text-white bg-transparent"
+            >
+              BOOK A TABLE
+            </button>
+          </div>
+        </div>
+        <button class="playBtn bg-alpha border-0">
+          <i class="bi bi-play-circle text-white"></i>
+        </button>
+      </div>
     </header>
     <main>
+      <section id="about" class="py-15">
+        <div class="text-white px-lg-20 px-2 w-100 h-100 d-flex flex-lg-row flex-column gap-lg-3 gap-2 align-items-lg-center justify-content-center w-50">
+          <div class="w-50 d-flex flex-column gap-5">
+            <div class="d-flex flex-column gap-1">
+                <h2 class="fs-4 text-white">Voluptatem dignissimos provident</h2>
+                <p class="fs-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <div class="d-flex flex-column gap-1">
+                <p class="d-flex gap-1 align-items-cente">
+                  <i class="bi bi-check-all text-alpha fs-3"></i>Ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat.
+                </p>
+                <p class="d-flex gap-1 align-items-cente">
+                  <i class="bi bi-check-all text-alpha fs-3"></i>Duis aute irure dolor in
+                  reprehenderit in voluptate velit.
+                </p>
+                <p class="d-flex gap-1 align-items-start">
+                  <i class="bi bi-check-all text-alpha fs-3"></i>Ullamco laboris nisi ut aliquip ex
+                  ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate trideta storacalaperda mastiro dolore eu fugiat nulla
+                  pariatur.
+                </p>
+              </div>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident
+              </p>
+          </div>
+          <div class="w-50">
+            <img src="./public/images/about.jpg" alt="" class="w-100 border border-5 border-dark">
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./public/js/app.js"></script>
-</body>
-
+  </body>
 </html>
