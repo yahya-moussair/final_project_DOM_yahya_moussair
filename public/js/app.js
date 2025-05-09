@@ -28,3 +28,50 @@ const headerJs = () => {
   });
 };
 headerJs();
+const testimonialsCarousel = () => {
+  //! testimonials carousel
+  let controller1 = document.querySelector("#firstController");
+  let controller2 = document.querySelector("#secondController");
+  let controller3 = document.querySelector("#thirdController");
+  let controller4 = document.querySelector("#fourthController");
+  let firstCard = document.querySelector("#firstCard");
+  let secondtCard = document.querySelector("#secondCard");
+  let thirdCard = document.querySelector("#thirdCard");
+  let fourthCard = document.querySelector("#fourthCard");
+  let fiveCard = document.querySelector("#fiveCard");
+  let sixCard = document.querySelector("#sixCard");
+  let carouselController = document.querySelectorAll("#controllerCarousel");
+  controller1.addEventListener("click", () => {
+    firstCard.style.transform = "translateX(0rem)";
+    secondtCard.style.transform = "translateX(0rem)";
+    thirdCard.style.transform = "translateX(0rem)";
+    fourthCard.style.transform = "translateX(0rem)";
+    fiveCard.style.transform = "translateX(0rem)";
+    sixCard.style.transform = "translateX(0rem)";
+  });
+  controller2.addEventListener("click", () => {
+    firstCard.style.transform = "translateX(-25rem)";
+    secondtCard.style.transform = "translateX(-25rem)";
+    thirdCard.style.transform = "translateX(-25rem)";
+    fourthCard.style.transform = "translateX(-25rem)";
+    fiveCard.style.transform = "translateX(-25rem)";
+    sixCard.style.transform = "translateX(-25rem)";
+  });
+  controller3.addEventListener("click", () => {
+    firstCard.style.transform = "translateX(-53rem)";
+    secondtCard.style.transform = "translateX(-53rem)";
+    thirdCard.style.transform = "translateX(-53rem)";
+    fourthCard.style.transform = "translateX(-53rem)";
+    fiveCard.style.transform = "translateX(-53rem)";
+    sixCard.style.transform = "translateX(-53rem)";
+  });
+  controller4.addEventListener("click", () => {
+    firstCard.style.transform = "translateX(-78rem)";
+    secondtCard.style.transform = "translateX(-78rem)";
+    thirdCard.style.transform = "translateX(-78rem)";
+    fourthCard.style.transform = "translateX(-78rem)";
+    fiveCard.style.transform = "translateX(-78rem)";
+    sixCard.style.transform = "translateX(-78rem)";
+  });
+};
+testimonialsCarousel()

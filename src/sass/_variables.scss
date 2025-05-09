@@ -4,12 +4,14 @@ $alpha: #cda45e;
 $beta: #1a1814;
 $dark: #6c757d;
 $hoverColor: rgba(205, 164, 94, 0.8);  
-$white : #fff;          
+$white : #fff;   
+$cardColor : rgb(17, 16, 14);
 $colors: (
-    "alpha": $alpha , 
-    "beta": $beta ,
+    "alpha": $alpha,  
+    "beta": $beta,
     "daark": $dark,
     "white": $white,
+    "cardColor": $cardColor
 );
 $theme-colors: map-merge($colors , $theme-colors);
 

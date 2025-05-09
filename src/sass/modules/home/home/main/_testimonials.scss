@@ -1,0 +1,62 @@
+#testimonials {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important;
+  div {
+    div {
+      h2 {
+        font-family: "secondary-font", sans-serif;
+      }
+      .testimonialsParagraph {
+        font-family: "secondary-font", sans-serif;
+        position: relative;
+      }
+      .testimonialsParagraph::before {
+        content: "";
+        position: absolute;
+        left: 6rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5rem;
+        height: 2px;
+        background-color: $alpha;
+      }
+    }
+  }
+  div {
+      overflow-x: hidden;
+      overflow-y: hidden;
+    .cardTeastimonials {
+      width: 25rem;
+      transition: 0.5s;
+    }
+    .testimonials-profile {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: none;
+    }
+    .personInfo {
+      transform: translate(1rem, -2.5rem);
+    }
+  }
+  #controllerCarousel {
+    span i{
+      transition: 0.5s;
+    }
+    span:hover {
+      i {
+        color: $alpha !important;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media(max-width:900px){
+  #testimonials{
+    .cardTeastimonials{
+      width: 23rem !important;
+    }
+  }
+}
