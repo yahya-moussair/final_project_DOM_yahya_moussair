@@ -1,0 +1,63 @@
+footer {
+  #gallery {
+    position: relative !important;
+    height: max-content;
+    width: 100%;
+    z-index: 0 !important;
+  }
+  div {
+    div {
+      .firstDisplay {
+        a {
+          font-family: "secondary-font";
+        }
+      }
+    }
+  }
+}
+h3{
+    font-family: 'secondary-font' , sans-serif;
+}
+.socilaIcons {
+  i {
+    transition: 0.5s;
+  }
+  i:hover {
+    border-color: $alpha !important;
+    color: $alpha !important;
+    cursor: pointer;
+  }
+}
+.secondDisplay , .thirdDisplay{
+    ul{
+        li{
+            a{
+                transition: 0.5s;
+            }
+            a:hover{
+                color: $alpha !important;
+            }
+        }
+    }
+}
+.firstDisplay , .secondDisplay , .thirdDisplay , .fourthDisplay{
+    width: calc(100% / 3);
+}
+.fourthDisplay{
+    .inputDiv{
+        button{
+            transform: translateX(-2.5rem);
+            transition: 0.5s;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+    }
+}
+@media (max-width:900px){
+    footer{
+        .firstDisplay , .secondDisplay , .thirdDisplay , .fourthDisplay{
+            width: 100% !important;
+        }
+    }
+}

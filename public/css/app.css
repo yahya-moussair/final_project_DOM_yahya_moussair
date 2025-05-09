@@ -28737,5 +28737,40 @@ header::before {
 @media (max-width: 900px) {
   #chefs .firstCard, #chefs .secondCard, #chefs .thirdCard {
     width: 100% !important; } }
+footer #gallery {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important; }
+footer div div .firstDisplay a {
+  font-family: "secondary-font"; }
+
+h3, .h3 {
+  font-family: 'secondary-font' , sans-serif; }
+
+.socilaIcons i {
+  transition: 0.5s; }
+.socilaIcons i:hover {
+  border-color: #cda45e !important;
+  color: #cda45e !important;
+  cursor: pointer; }
+
+.secondDisplay ul li a, .thirdDisplay ul li a {
+  transition: 0.5s; }
+.secondDisplay ul li a:hover, .thirdDisplay ul li a:hover {
+  color: #cda45e !important; }
+
+.firstDisplay, .secondDisplay, .thirdDisplay, .fourthDisplay {
+  width: calc(100% / 3); }
+
+.fourthDisplay .inputDiv button {
+  transform: translateX(-2.5rem);
+  transition: 0.5s; }
+.fourthDisplay .inputDiv button:hover {
+  opacity: 0.8; }
+
+@media (max-width: 900px) {
+  footer .firstDisplay, footer .secondDisplay, footer .thirdDisplay, footer .fourthDisplay {
+    width: 100% !important; } }
 
 /*# sourceMappingURL=app.css.map */
