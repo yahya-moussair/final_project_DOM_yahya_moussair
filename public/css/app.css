@@ -28271,14 +28271,35 @@ textarea.form-control-lg {
 @font-face {
   font-family: 'secondary-font';
   src: url("../../public/fonts/PlayfairDisplay-Regular.ttf"); }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
   margin: 0;
   padding: 0; }
 
 * {
   z-index: 5 !important;
-  font-family: 'primary-font';
+  font-family: "primary-font";
   -webkit-user-select: none; }
+
+.backToTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 300 !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer; }
 
 header {
   position: relative;
@@ -28292,7 +28313,7 @@ header {
     color: #fff;
     z-index: 100 !important; }
     header nav a h1, header nav a .h1 {
-      font-family: 'secondary-font';
+      font-family: "secondary-font";
       font-weight: bold;
       transition: 0.5s; }
     header nav a h1:hover, header nav a .h1:hover {
@@ -28343,10 +28364,10 @@ header {
       color: black !important;
       border: 1px black solid; }
   header .heroSection div h1, header .heroSection div .h1 {
-    font-family: 'secondary-font' , sans-serif;
+    font-family: "secondary-font", sans-serif;
     font-size: 3.5rem; }
     header .heroSection div h1 span, header .heroSection div .h1 span {
-      font-family: 'secondary-font' , sans-serif; }
+      font-family: "secondary-font", sans-serif; }
   header .heroSection div div button {
     transition: 0.5s;
     width: 10rem; }
@@ -28376,11 +28397,14 @@ header::before {
   filter: sepia(10%) brightness(50%);
   z-index: 0 !important; }
 
-#menu, #close, #open {
+#menu,
+#close,
+#open {
   display: none; }
 
 @media (max-width: 900px) {
-  header #open, header #close {
+  header #open,
+  header #close {
     display: block; }
   header #close {
     position: absolute;
@@ -28398,7 +28422,9 @@ header::before {
       transition: 0.5s;
       width: 90%;
       height: 90vh; }
-      header nav .navLinks a, header nav .navLinks div > p, header nav .navLinks span {
+      header nav .navLinks a,
+      header nav .navLinks div > p,
+      header nav .navLinks span {
         color: black !important; }
     header nav a h1, header nav a .h1 {
       font-size: 1.5rem; }
