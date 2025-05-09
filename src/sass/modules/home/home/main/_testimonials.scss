@@ -41,17 +41,6 @@
       transform: translate(1rem, -2.5rem);
     }
   }
-  #controllerCarousel {
-    span i{
-      transition: 0.5s;
-    }
-    span:hover {
-      i {
-        color: $alpha !important;
-        cursor: pointer;
-      }
-    }
-  }
 }
 @media(max-width:900px){
   #testimonials{

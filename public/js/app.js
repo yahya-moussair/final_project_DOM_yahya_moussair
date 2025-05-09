@@ -40,7 +40,10 @@ const testimonialsCarousel = () => {
   let fourthCard = document.querySelector("#fourthCard");
   let fiveCard = document.querySelector("#fiveCard");
   let sixCard = document.querySelector("#sixCard");
-  let carouselController = document.querySelectorAll("#controllerCarousel");
+  controller1.style.color = "white";
+  controller2.style.color = "white";
+  controller3.style.color = "white";
+  controller4.style.color = "white";
   controller1.addEventListener("click", () => {
     firstCard.style.transform = "translateX(0rem)";
     secondtCard.style.transform = "translateX(0rem)";
@@ -48,6 +51,10 @@ const testimonialsCarousel = () => {
     fourthCard.style.transform = "translateX(0rem)";
     fiveCard.style.transform = "translateX(0rem)";
     sixCard.style.transform = "translateX(0rem)";
+    controller1.style.color = "#cda45e";
+    controller2.style.color = "white";
+    controller3.style.color = "white";
+    controller4.style.color = "white";
   });
   controller2.addEventListener("click", () => {
     firstCard.style.transform = "translateX(-25rem)";
@@ -56,6 +63,10 @@ const testimonialsCarousel = () => {
     fourthCard.style.transform = "translateX(-25rem)";
     fiveCard.style.transform = "translateX(-25rem)";
     sixCard.style.transform = "translateX(-25rem)";
+    controller2.style.color = "#cda45e";
+    controller1.style.color = "white";
+    controller3.style.color = "white";
+    controller4.style.color = "white";
   });
   controller3.addEventListener("click", () => {
     firstCard.style.transform = "translateX(-53rem)";
@@ -64,6 +75,10 @@ const testimonialsCarousel = () => {
     fourthCard.style.transform = "translateX(-53rem)";
     fiveCard.style.transform = "translateX(-53rem)";
     sixCard.style.transform = "translateX(-53rem)";
+    controller3.style.color = "#cda45e";
+    controller1.style.color = "white";
+    controller2.style.color = "white";
+    controller4.style.color = "white";
   });
   controller4.addEventListener("click", () => {
     firstCard.style.transform = "translateX(-78rem)";
@@ -72,6 +87,54 @@ const testimonialsCarousel = () => {
     fourthCard.style.transform = "translateX(-78rem)";
     fiveCard.style.transform = "translateX(-78rem)";
     sixCard.style.transform = "translateX(-78rem)";
+    controller4.style.color = "#cda45e";
+    controller1.style.color = "white";
+    controller3.style.color = "white";
+    controller2.style.color = "white";
   });
 };
-testimonialsCarousel()
+testimonialsCarousel();
+const specialsFilter = () => {
+  let filterController = document.querySelectorAll(".filterController");
+  document.querySelector("#firstDisplay").classList.add("hidden");
+  document.querySelector("#secondDisplay").classList.add("hidden");
+  document.querySelector("#thirdDisplay").classList.add("hidden");
+  document.querySelector("#fourthDisplay").classList.add("hidden");
+  document.querySelector("#fiveDisplay").classList.add("hidden");
+  filterController.forEach((e) => {
+    e.addEventListener("click", (e) => {
+      if (e.target == document.querySelector("#firstFilter")) {
+        document.querySelector("#firstDisplay").classList.remove("hidden");
+        document.querySelector("#secondDisplay").classList.add("hidden");
+        document.querySelector("#thirdDisplay").classList.add("hidden");
+        document.querySelector("#fourthDisplay").classList.add("hidden");
+        document.querySelector("#fiveDisplay").classList.add("hidden");
+      } else if (e.target == document.querySelector("#secondFilter")) {
+        document.querySelector("#firstDisplay").classList.add("hidden");
+        document.querySelector("#secondDisplay").classList.remove("hidden");
+        document.querySelector("#thirdDisplay").classList.add("hidden");
+        document.querySelector("#fourthDisplay").classList.add("hidden");
+        document.querySelector("#fiveDisplay").classList.add("hidden");
+      } else if (e.target == document.querySelector("#thirdFilter")) {
+        document.querySelector("#secondDisplay").classList.add("hidden");
+        document.querySelector("#firstDisplay").classList.add("hidden");
+        document.querySelector("#thirdDisplay").classList.remove("hidden");
+        document.querySelector("#fourthDisplay").classList.add("hidden");
+        document.querySelector("#fiveDisplay").classList.add("hidden");
+      } else if (e.target == document.querySelector("#fourthFilter")) {
+        document.querySelector("#secondDisplay").classList.add("hidden");
+        document.querySelector("#firstDisplay").classList.add("hidden");
+        document.querySelector("#thirdDisplay").classList.add("hidden");
+        document.querySelector("#fourthDisplay").classList.remove("hidden");
+        document.querySelector("#fiveDisplay").classList.add("hidden");
+      } else if (e.target == document.querySelector("#fiveFilter")) {
+        document.querySelector("#secondDisplay").classList.add("hidden");
+        document.querySelector("#firstDisplay").classList.add("hidden");
+        document.querySelector("#thirdDisplay").classList.add("hidden");
+        document.querySelector("#fourthDisplay").classList.add("hidden");
+        document.querySelector("#fiveDisplay").classList.remove("hidden");
+      }
+    });
+  });
+};
+specialsFilter();

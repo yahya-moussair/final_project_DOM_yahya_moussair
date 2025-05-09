@@ -28475,6 +28475,64 @@ header::before {
 @media (max-width: 900px) {
   #whyUs .cardWhyUS {
     width: 100% !important; } }
+#specials {
+  position: relative !important;
+  height: max-content;
+  width: 100%;
+  z-index: 0 !important; }
+  #specials div div h2, #specials div div .h2 {
+    font-family: "secondary-font", sans-serif; }
+  #specials div div .specialsParagraph {
+    font-family: "secondary-font", sans-serif;
+    position: relative; }
+  #specials div div .specialsParagraph::before {
+    content: "";
+    position: absolute;
+    left: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #cda45e; }
+  #specials div div .filterController {
+    position: relative; }
+    #specials div div .filterController p {
+      transition: 0.5s;
+      width: 100%; }
+    #specials div div .filterController p:hover {
+      cursor: pointer;
+      background-color: #cda45e; }
+  #specials div div .filterController::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #cda45e;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 100%; }
+  #specials div div .filterDisplay {
+    width: 70%; }
+    #specials div div .filterDisplay div {
+      transition: 0.5s; }
+
+.hidden {
+  display: none !important; }
+
+@media (max-width: 900px) {
+  #specials div .filterController {
+    position: relative; }
+    #specials div .filterController p {
+      transition: 0.5s;
+      width: fit-content !important;
+      text-align: center !important; }
+    #specials div .filterController .filterController::before {
+      width: 0 !important; }
+  #specials div .filterDisplay {
+    width: 100% !important;
+    text-align: center; }
+    #specials div .filterDisplay div img {
+      width: 75% !important; } }
 #bookAtable {
   position: relative !important;
   height: max-content;
@@ -28544,11 +28602,6 @@ header::before {
       border: none; }
     #testimonials div .personInfo {
       transform: translate(1rem, -2.5rem); }
-  #testimonials #controllerCarousel span i {
-    transition: 0.5s; }
-  #testimonials #controllerCarousel span:hover i {
-    color: #cda45e !important;
-    cursor: pointer; }
 
 @media (max-width: 900px) {
   #testimonials .cardTeastimonials {
